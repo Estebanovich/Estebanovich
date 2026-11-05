@@ -1,122 +1,65 @@
 <div align="center">
 
-# 🌊 Esteban Cruz Isidro
+# Esteban Cruz Isidro
 
-### Physical Oceanographer · Numerical Modeller · Science Communicator
+**Physical oceanographer · Numerical ocean modeller**
 
-*Simulating ocean dynamics, one MITgcm run at a time*
+*Simulating ocean dynamics, one MITgcm run at a time.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-cruz-isidro-1a6a421a3)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:estebanci96@gmail.com)
-[![UNAM](https://img.shields.io/badge/UNAM-003DA5?style=for-the-badge&logo=graduation-cap&logoColor=white)](https://www.unam.mx)
 
 </div>
 
 ---
 
-## 👋 About Me
+## About me
 
-I'm a **Physical Oceanographer and numerical modeller** based in Mexico City, currently completing my M.Sc. in Earth Sciences at UNAM. My research focuses on **internal wave and seiche dynamics** using idealized numerical experiments in MITgcm. I also work on operational ocean forecasting for the Gulf of Mexico with HYCOM.
+I'm a physical oceanographer from Mexico, finishing my M.Sc. in Earth Sciences (Meteorology & Physical Oceanography) at UNAM. I build and run numerical ocean models, from idealized process studies in MITgcm to an operational regional forecast with HYCOM.
 
-I care about reproducible science, clean computational workflows, and communicating complex ocean processes through data and storytelling.
-
-- 🔭 **Current research:** Internal waves & seiche dynamics (M.Sc. thesis, UNAM)
-- ⚙️ **Current project:** HYCOM-IOA operational forecast system for the Gulf of Mexico
-- 🎤 **Recently presented at:** European Geosciences Union (EGU) 2025
-- 🌍 **Languages:** Spanish (native) · English (B2/IELTS 6.5)
-- 📍 **Based in:** Mexico City, Mexico
+**🔭 Seeking a PhD starting in 2027** in polar ocean modelling: ice–ocean interaction, internal waves and mixing in polar oceans, and machine learning for ocean models. I'd love the PhD to include Antarctic or Arctic fieldwork.
 
 ---
 
-## 🛠️ Technical Stack
+## Research
 
-**Ocean & Geophysical Modelling**
+### 🌊 Internal waves radiated by a wind-forced bay — M.Sc. thesis (UNAM, 2026)
+*Advisor: Dr. Ana Karina Ramos Musalem · Presented at EGU General Assembly 2025*
 
-![MITgcm](https://img.shields.io/badge/MITgcm-0077B6?style=flat-square&logoColor=white)
-![HYCOM](https://img.shields.io/badge/HYCOM-0096C7?style=flat-square&logoColor=white)
-![NetCDF](https://img.shields.io/badge/NetCDF-48CAE4?style=flat-square&logoColor=white)
-![GFD](https://img.shields.io/badge/Geophysical_Fluid_Dynamics-023E8A?style=flat-square&logoColor=white)
+Idealized MITgcm experiments of a bay the size of Sebastián Vizcaíno Bay (Baja California), forced by a 2.8 h wind pulse, under linear, realistic and two-layer stratification, each with a no-bay control run.
 
-**Programming & Computing**
+- The 3.8 h seiche period does not depend on stratification, but its decay does (8.3, 9.0 and 9.9 h).
+- Barotropic-to-baroclinic conversion at the mouth explains 18, 10 and 1 % of the seiche decay.
+- **The seiche is not the main pathway:** most of the baroclinic energy leaving the bay is its near-inertial response (1.01–1.07 f), which exits as a sloping beam and as coastal internal Kelvin waves.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-E16737?style=flat-square&logoColor=white)
-![Fortran](https://img.shields.io/badge/Fortran-734F96?style=flat-square&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux/HPC-FCC624?style=flat-square&logo=linux&logoColor=black)
+➡️ [Model configuration](https://github.com/Estebanovich/BayIW_Rectan) · [Analysis & figures](https://github.com/Estebanovich/-IWBayMITgcm-postprocessing)
 
-**Data & Visualization**
+### 🛰️ Operational ocean forecasting — UNAM / CENAPRED (2023–present)
+- Built and operate a **1/25° HYCOM forecast for the Mexican Pacific** (1.8 M grid points, 36 hybrid layers), forced by WRF winds, rivers and 8-constituent TPXO10 tides with self-attraction and loading. It provides the total-water-level component of CENAPRED's early-warning system for storm surge and extreme events.
+- Maintain the daily HYCOM forecast for the Gulf of Mexico on UNAM's HPC cluster, delivering SST, SSH and heat-content products to PEMEX, CONAGUA and civil-protection authorities.
+- Operate a PyGNOME Lagrangian dispersal system for oil-spill response, and wrote a tested Python toolkit (265 tests) that compares HYCOM, ESPC and Copernicus Marine forecasts.
+- Designing a two-way WRF–HYCOM coupled system (ESMF/NUOPC) for tropical cyclones in the eastern Pacific.
 
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logoColor=white)
-![Xarray](https://img.shields.io/badge/Xarray-E76F51?style=flat-square&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+*(Operational code is private to the institution.)*
 
----
+### 🏞️ Interaction between submarine canyons — B.Sc. thesis (UNAM, 2023)
+MITgcm simulations of rotating-tank upwelling over two identical canyons. The upstream canyon always upwelled more than the downstream one, so the canyons interact dynamically; the difference shrinks as the Rossby and Burger numbers grow.
 
-## 🔬 Research & Projects
-
-### 🌊 Internal Waves & Seiche Dynamics (M.Sc. Thesis)
-> *Institute of Atmospheric Sciences and Climate Change, UNAM — 2023–Present*
-
-Designing and running idealized numerical experiments in **MITgcm** to investigate internal-wave generation and seiche dynamics in enclosed basins. Work includes boundary-condition sensitivity analysis, terabyte-scale NetCDF postprocessing in Python, and reproducible workflow design for geophysical fluid dynamics research.
-
-**Advisor:** ['Dr. Karina Ramos Musalem'](https://anakarinarm.github.io)
-
-📌 **Repos:** [`BayIW_Rectan`](https://github.com/Estebanovich/BayIW_Rectan) · [`BayIW_Rectan_2layer`](https://github.com/Estebanovich/BayIW_Rectan_2layer) · [`-IWBayMITgcm-postprocessing`](https://github.com/Estebanovich/-IWBayMITgcm-postprocessing)
+### 🚢 Fieldwork
+Research cruise on R/V *Justo Sierra*, Gulf of Mexico (May 2024): hydrographic, biological and sediment sampling, data QC.
 
 ---
 
-### 🛰️ HYCOM-IOA — Operational Ocean Forecasting
-> *UNAM / CENAPRED collaborative project — 2025–Present*
+## Tools
 
-Contributing to the implementation and automation of the **HYCOM-IOA** operational forecast system for the Gulf of Mexico. Responsibilities include daily NetCDF acquisition pipelines, conversion to HYCOM native binary format, hybrid vertical-coordinate preparation, nesting generation, and restart-file production. Running on the **Ometeotl supercomputing environment**.
-
-📌 **Repo:** [`HYCOM-IOA`](https://github.com/Estebanovich/HYCOM-IOA)
-
----
-
-### 🏔️ Dynamic Interaction Between Submarine Canyons (B.Sc. Thesis)
-> *Faculty of Sciences, UNAM — 2023*
-
-Investigated the dynamic interaction between two adjacent submarine canyons during upwelling events using **MITgcm** numerical simulations in a rotating tank setup. Designed 15 simulation runs varying stratification (Brunt-Väisälä frequency), Coriolis parameter, and density profiles — with canyon geometry based on the Astoria and Barkley Canyons (USA/Canada). Quantified upwelling depth and upwelling flux for each canyon and compared results against the theoretical scaling of Howatt & Allen (2013).
-
-**Key findings:** The upstream canyon consistently showed greater upwelling depth and initial upwelling flux. Canyon interaction strength is inversely proportional to both the Burger number (Bu) and the Rossby number (Rw). Stratification plays a key role — higher N reduces the dynamic coupling between canyons.
-
-**Advisor:** Dr. Ana Karina Ramos Musalem (UNAM)
+**Ocean & climate models:** MITgcm · HYCOM · WRF forcing · PyGNOME · ESMF/NUOPC · TPXO10 · ERA5 · GEBCO
+**Machine learning:** ECMWF Anemoi (graph neural networks on ERA5) · scikit-learn
+**Programming & HPC:** Python · Fortran · Bash/C-shell · MATLAB · MPI · SLURM · Linux clusters
+**Data:** xarray · NetCDF4 · Dask · NumPy · Matplotlib · Cartopy · Jupyter
 
 ---
 
-### 🚢 Oceanographic Field Campaign — R/V B/O Justo Sierra
-> *Gulf of Mexico — May 2024*
+## Outreach
+🎙️ Creator and host of *Pronóstico*, a Spanish-language podcast on climate science.
 
-Participated in an interdisciplinary research campaign, collecting and curating physical, chemical, and biological oceanographic datasets. Contributed to quality control and consistency checks for observational data used in validation and modelling workflows.
-
----
-
-## 🎓 Education
-
-| Degree | Institution | Period |
-|--------|-------------|--------|
-| **M.Sc. Earth Sciences** — Meteorology & Physical Oceanography | UNAM | 2023 – Present |
-| **B.Sc. Earth Sciences** — Aquatic Sciences | UNAM | 2017 – 2023 |
-
----
-
-## 📫 Let's Connect
-
-I'm open to research collaborations, positions in **ocean modelling, climate science, and polar oceanography**, and conversations about reproducible scientific computing.
-
-- 📧 **Email:** [estebanci96@gmail.com](mailto:estebanci96@gmail.com)
-- 💼 **LinkedIn:** [esteban-cruz-isidro](https://www.linkedin.com/in/esteban-cruz-isidro-1a6a421a3)
-- 📍 **Location:** Mexico City, Mexico
-
----
-
-<div align="center">
-
-*"The ocean is a mighty harmonist."* — William Wordsworth
-
-![Profile views](https://komarev.com/ghpvc/?username=Estebanovich&color=0077B6&style=flat-square)
-
-</div>
+🌎 Spanish (native) · English (professional) · French (basic)
